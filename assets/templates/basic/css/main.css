@@ -12,7 +12,7 @@ body {
     font-weight: 400;
     position: relative;
     line-height: 1.7;
-    background: #002046;
+    background-image: linear-gradient(to bottom right, #ad18c7, #11c4e3);
     -webkit-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
@@ -3294,3 +3294,7 @@ input[type="number"] {
     }
 
 }
+
+body::-webkit-scrollbar-track { box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 2px inset; border-radius: 5px; background-color: transparent; }
+body::-webkit-scrollbar { width: 10px; background-color: transparent; }
+body::-webkit-scrollbar-thumb { border-radius: 5px; box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 2px inset; background-color: #002046; }
