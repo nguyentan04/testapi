@@ -3294,7 +3294,3 @@ input[type="number"] {
     }
 
 }
-
-body::-webkit-scrollbar-track { box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 2px inset; border-radius: 5px; background-color: transparent; }
-body::-webkit-scrollbar { width: 10px; background-color: transparent; }
-body::-webkit-scrollbar-thumb { border-radius: 5px; box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 2px inset; background-color: #00152e ; }
