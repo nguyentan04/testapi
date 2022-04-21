@@ -1,0 +1,56 @@
+a:link,a:visited,a:hover,a:active {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+body {
+    background-color: #010438;
+}
+
+header {
+    margin: 20% auto;
+}
+.desktop {
+    max-width: 1000px;
+}
+.desktop > .header.menu {
+    height: 104px;
+}
+
+.desktop > .header.menu > .logo{
+   
+}
+
+.desktop > .header.menu > .menu-app{
+}
+
+.desktop > .header.menu > .menu-app > .btn:hover {
+    zoom: 1.15;
+}
+
+.desktop > .header.menu > .menu-center {
+
+}
+
+.desktop > .header.menu > .menu-center > .item-cen {
+
+}
+
+.desktop > .header.menu > .menu-center > .item-cen > a {
+    font-family: 'Allan';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 27px;
+    color: #FFFFFF;
+    margin: 0px 5px;
+    padding: 10px 15px;
+}
+
+.desktop > .header.menu > .menu-center > .item-cen > a.active {
+    font-style: italic;
+    background: rgba(249, 171, 129, 0.15);
+    box-shadow: inset 2px -2px 2px rgb(255 255 255 / 10%), inset -2px 2px 2px rgb(255 255 255 / 20%);
+    backdrop-filter: blur(64px);
+    border-radius: 96px;
+}
