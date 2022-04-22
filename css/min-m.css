@@ -5,11 +5,17 @@ html, head, body, div, ul, li, p, img, h2 {
     list-style: none;
     font-family: 'Mulish';
 }
+img {
+    width: 100%;
+    height: 100%;
+}
 a, a:active, a:visited, a:hover {
     text-decoration: none;
     color: #FFFFFF;
 }
-
+.font-allan {
+    font-family: 'Allan';
+}
 body::-webkit-scrollbar-track{
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
     border-radius: 10px;
@@ -32,46 +38,41 @@ body {
     background-color: #010438;
 }
 
-/*home socal*/
-.home-socal {
-    display: inline-block;
-    width: 5%;
-    position: relative;
-    top: -261px;
-    left: -45px;
-}
-
-/* headr menu */
-.header.menu > .logo{
-    position: relative;
-    display: inline-block;
-    right: 0%;
-    top: 34px;
-}
-
-.header.menu > .menu-app{
-    position: relative;
-    display: inline-block;
-    left: 87%;
-    top: -55px;
-    transition: all 2s ease-in-out;
-}
-
-.header.menu > .menu-app > .btn:hover {
-    transform: scale(1.15)
-}
-
-.header.menu > .menu-center {
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.header.menu > .menu-center > .item-cen {
+/** menu **/
+.logo {
+    margin-left: 10px;
+    width: 123px;
+    height: 48px;
     display: inline-block;
 }
 
-.header.menu > .menu-center > .item-cen > a {
+.menu {
+    float:right;
+    margin-right:10px;
+    margin-top:10px;
+    width: 32px;
+    height: 32px;
+}
+.menu-close {
+    float:right;
+    margin-right:10px;
+    margin-top:10px;
+    width: 18.71px;
+    height: 18.71px;
+}
+
+.header > .menu-body {    
+    position: absolute;
+    top: 0px;
+    height: 100vh;
+    width: 100vw;
+    background-color: #010438;
+}
+
+.item-cen {
+    margin: 30px 0px;
+}
+.item-cen > a {
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -80,333 +81,8 @@ body {
     margin: 0px 5px;
     padding: 10px 15px;
 }
-
-.header.menu > .menu-center > .item-cen > a.active {
-    font-style: italic;
-    background: rgba(249, 171, 129, 0.15);
-    box-shadow: inset 2px -2px 2px rgb(255 255 255 / 10%), inset -2px 2px 2px rgb(255 255 255 / 20%);
-    backdrop-filter: blur(64px);
-    border-radius: 96px;
-}
-/* headr menu */
-
-/* format body*/
-div.main-body {
-    margin: 0% auto;
-    max-width: 1200px;
-}
-
-/* format body*/
-
-/*title*/
-h2.tit {
-    font-family: 'Allan';
-    color: #FFFFFF;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 72px;
-}
-h4.des {
-    color: #DADFF1;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-}
-/*description*/
-
-/*align*/
-.align-left{
-    text-align: left;
+.menu-app {
+    max-width: 300px;
     margin: auto;
 }
-.align-center{
-    text-align: center;
-    margin: auto;
-}
-.align-right{
-    text-align: right;
-    margin: auto;
-}
-/*align*/
-
-/*color*/
-.color-green {
-    color: #6FD6B7;
-}
-.color-flam {
-    color:#FA885B
-}
-.color-maj {
-    color:#AE97FF
-}
-.color-white {
-    color:white
-}
-
-/*color*/
-
-/*content home*/
-.home {
-    text-align: center;
-}
-.home > .home-left {
-    width: 50%;
-    display: inline-block;
-    position: relative;
-    top: -200px;
-}
-.home > .home-right {
-    display: inline-block;
-    width: 40%;
-}
-
-.row-data {
-    padding: 20px 30px;
-    background: rgba(237, 252, 251, 0.08);
-    box-shadow: inset 2px -2px 2px rgba(255, 255, 255, 0.1), inset -2px 2px 2px rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(64px);
-    border-radius: 24px;
-}
-
-.row-data > .data-info {
-    display: inline-block;
-    width: 30%;
-}
-
-.data-info > .info-des {
-    color: #FFFFFF;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 32px;
-    text-align: center;
-}
-
-.data-info > .info-tit {
-    text-align: center;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-}
-/*content home*/
-
-/*content how to play*/
-.how-to-play > .boxs {
-    margin-right: -15px;
-    margin-left: -15px;
-}
-
-.how-to-play > .boxs > .box {
-    margin-right: 3%;
-    background: rgba(237, 252, 251, 0.08);
-    box-shadow: inset 2px -2px 2px rgb(255 255 255 / 10%), inset -2px 2px 2px rgb(255 255 255 / 20%);
-    backdrop-filter: blur(64px);
-    border-radius: 24px;
-    width: 22%;
-    display: inline-block;
-    height: 200px;
-}
-
-.how-to-play > .boxs > .box > .des {
-    color: #FFFFFF;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 32px;
-    text-align: center;
-    margin-top: 92px;
-}
-
-img.flow  {
-    position: absolute;
-    left: 92%;
-    top: 27%;
-}
-img.head {
-    position: absolute;
-    top: -29%;
-    left: 36%;
-}
-img.foot {
-    position: absolute;
-    top: 30%;
-    left: 33%;
-}
-/*content how to play*/
-
-
-/*content features*/
-.data-row > .tit {
-    display: inline-block;
-    width: 30%;
-}
-.data-row > .des {
-    display: inline-block;
-    width: 65%;
-    margin: auto;
-}
-.data-row > .des > .head {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 38px;
-    align-items: center;
-    color: #DADFF1;
-}
-.data-row > .des > .content {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #DADFF1;
-}
-/*content features*/
-
-/** content about us*/
-.about-us > .contents > .out-team > .head
-, .about-us > .contents > .out-partners > .head {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 38px;
-    color: #DADFF1;
-}
-.about-us > .contents > .out-team > .content
-,.about-us > .contents > .out-partners > .content {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #C2C8DE;
-}
-.about-us > .contents > .out-partners 
-,.about-us > .contents > .out-team{
-    text-align: center;
-    width: 24%;
-    display:inline-block;
-}
-.about-us > .contents > .teams
-, .about-us > .contents > .partners {
-    width: 75%;
-    display:inline-block;
-}
-.about-us > .contents > .teams > .member
-, .about-us > .contents > .partners > .part{
-    text-align: center;
-    width: 33%;
-    display:inline-block;
-    margin-bottom: 20px;
-}
-
-.about-us > .contents > .teams > .member > .name {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 32px;
-    color: #C2C8DE;
-}
-.about-us > .contents > .teams > .member > .job {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #C2C8DE;
-}
-/* margin body content*/
-
-/*content Footer*/
-img.socal {
-    width: 32px;
-    height: 32px;
-    margin: 5px;
-}
-.footer {
-    padding-top:30px;
-    border-top: 1px solid white;
-    margin-bottom: 30px;
-}
-.footer > .footer-left {
-    width: 33%;
-}
-.footer > .footer-center {
-    width: 33%;
-}
-.footer > .footer-right {
-    width: 33%;
-}
-/*content Footer*/
-.distance-70 {
-    margin-top: 70px;
-}
-.distance-140 {
-    margin-top: 140px;
-}
-.row {
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-}
-/* margin body content*/
-
-/*effect blur*/
-.e1 {
-    position: absolute;
-    width: 195px;
-    height: 195px;
-    left: -38px;
-    top: 558px;
-    background: linear-gradient(85.51deg, #9AE498 -23.26%, #02B3A9 100%);
-    filter: blur(300px);
-}
-
-.e2 {
-    position: absolute;
-    width: 400px;
-    height: 400px;
-    left: 200px;
-    top: 132px;
-    background: linear-gradient(84.62deg, #F3BB4D -35.68%, #F05F2E 100%);
-    filter: blur(500px);
-}
-
-.e3 {
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    left: 400px;
-    top: 576px;
-    background: linear-gradient(85.51deg, #BF93FE -23.26%, #6E50E4 100%);
-    filter: blur(160px);
-}
-
-.e4 {
-    position: absolute;
-    width: 320px;
-    height: 320px;
-    left: -122px;
-    top: 1792px;
-    background: linear-gradient(84.62deg, #F3BB4D -35.68%, #F05F2E 100%);
-    filter: blur(500px);
-}
-
-.e5 {
-    position: absolute;
-    width: 400px;
-    height: 400px;
-    left: 841px;
-    top: 299px;    
-    background: radial-gradient(50% 50% at 50% 50%, rgba(132, 250, 252, 0.25) 0%, rgba(36, 156, 199, 0.0625) 100%);
-    filter: blur(32px);
-}
-
-.e6 {
-    position: absolute;
-    width: 195px;
-    height: 195px;
-    left: 900px;
-    top: 1643px;
-    background: linear-gradient(85.51deg, #9AE498 -23.26%, #02B3A9 100%);
-    filter: blur(300px);
-}
-/*effect blur*/
+/** menu **/
