@@ -54,11 +54,11 @@ body {
     height: 32px;
 }
 .menu-close {
-    float:right;
-    margin-right:10px;
-    margin-top:10px;
     width: 18.71px;
     height: 18.71px;
+    position: absolute;
+    right: 30px;
+    top: 20px;
 }
 
 .header > .menu-body {    
@@ -86,6 +86,51 @@ body {
     margin: auto;
 }
 .data-socal > .socal {
-
+    width:32px;
+    height:32px;
 }
 /** menu **/
+
+/*align*/
+.align-left{
+    text-align: left;
+    margin: auto;
+}
+.align-center{
+    text-align: center;
+    margin: auto;
+}
+.align-right{
+    text-align: right;
+    margin: auto;
+}
+/*align*/
+
+/*color*/
+.color-green {
+    color: #6FD6B7;
+}
+.color-flam {
+    color:#FA885B
+}
+.color-maj {
+    color:#AE97FF
+}
+.color-white {
+    color:white
+}
+
+/*color*/
+
+/*effect */
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+/*effect */

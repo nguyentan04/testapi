@@ -397,8 +397,8 @@ img.socal {
     position: absolute;
     width: 400px;
     height: 400px;
-    left: 841px;
-    top: 299px;    
+    left: 1142px;
+    top: 299px;   
     background: radial-gradient(50% 50% at 50% 50%, rgba(132, 250, 252, 0.25) 0%, rgba(36, 156, 199, 0.0625) 100%);
     filter: blur(32px);
 }
@@ -413,3 +413,16 @@ img.socal {
     filter: blur(300px);
 }
 /*effect blur*/
+
+/*effect */
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+/*effect */
