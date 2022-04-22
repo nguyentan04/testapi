@@ -237,6 +237,7 @@ img.foot {
 .data-row > .des {
     display: inline-block;
     width: 65%;
+    margin: auto;
 }
 .data-row > .des > .head {
     font-family: Arial, Helvetica, sans-serif;
