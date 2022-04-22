@@ -3,9 +3,11 @@ html, head, body, div, ul, li, p, img, h2 {
     padding:0px;
     scroll-behavior: smooth;
     list-style: none;
+    font-family: 'Mulish';
 }
 a, a:active, a:visited, a:hover {
-text-decoration: none;
+    text-decoration: none;
+    color: #FFFFFF;
 }
 
 body::-webkit-scrollbar-track{
@@ -51,7 +53,7 @@ body {
 }
 
 .desktop > .header.menu > .menu-center {
-    max-width: 600px;
+    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -61,7 +63,6 @@ body {
 }
 
 .desktop > .header.menu > .menu-center > .item-cen > a {
-    font-family: 'Allan';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -90,17 +91,15 @@ div.main-body {
 
 /*title*/
 h2.tit {
+    font-family: 'Allan';
     color: #FFFFFF;
-    font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 56px;
     line-height: 72px;
-    font-style: italic;
 }
 h4.des {
     color: #DADFF1;
-    font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -111,9 +110,15 @@ h4.des {
 /*align*/
 .align-left{
     text-align: left;
+    margin: auto;
 }
 .align-center{
     text-align: center;
+    margin: auto;
+}
+.align-right{
+    text-align: right;
+    margin: auto;
 }
 /*align*/
 
@@ -121,14 +126,16 @@ h4.des {
 .color-green {
     color: #6FD6B7;
 }
-
 .color-flam {
     color:#FA885B
 }
-
 .color-maj {
     color:#AE97FF
 }
+.color-white {
+    color:white
+}
+
 /*color*/
 
 /*content home*/
@@ -161,7 +168,6 @@ h4.des {
 
 .data-info > .info-des {
     color: #FFFFFF;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
     font-size: 24px;
     line-height: 32px;
@@ -170,7 +176,6 @@ h4.des {
 
 .data-info > .info-tit {
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
@@ -179,9 +184,6 @@ h4.des {
 
 /*content how to play*/
 .how-to-play > .boxs {
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
 }
@@ -199,7 +201,6 @@ h4.des {
 
 .how-to-play > .boxs > .box > .des {
     color: #FFFFFF;
-    font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
@@ -227,9 +228,6 @@ img.foot {
 
 
 /*content features*/
-.data-row  {
-    display: flex;
-}
 .data-row > .tit {
     display: inline-block;
     width: 30%;
@@ -240,7 +238,6 @@ img.foot {
     margin: auto;
 }
 .data-row > .des > .head {
-    font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 28px;
@@ -249,7 +246,6 @@ img.foot {
     color: #DADFF1;
 }
 .data-row > .des > .content {
-    font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -258,12 +254,89 @@ img.foot {
 }
 /*content features*/
 
+/** content about us*/
+.about-us > .contents > .out-team > .head
+, .about-us > .contents > .out-partners > .head {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38px;
+    color: #DADFF1;
+}
+.about-us > .contents > .out-team > .content
+,.about-us > .contents > .out-partners > .content {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #C2C8DE;
+}
+.about-us > .contents > .out-partners 
+,.about-us > .contents > .out-team{
+    text-align: center;
+    width: 24%;
+    display:inline-block;
+}
+.about-us > .contents > .teams
+, .about-us > .contents > .partners {
+    width: 75%;
+    display:inline-block;
+}
+.about-us > .contents > .teams > .member
+, .about-us > .contents > .partners > .part{
+    text-align: center;
+    width: 33%;
+    display:inline-block;
+    margin-bottom: 20px;
+}
+
+.about-us > .contents > .teams > .member > .name {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #C2C8DE;
+}
+.about-us > .contents > .teams > .member > .job {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #C2C8DE;
+}
 /* margin body content*/
+
+/*content Footer*/
+img.socal {
+    width: 32px;
+    height: 32px;
+    margin: 5px;
+}
+.footer {
+    padding-top:30px;
+    border-top: 1px solid white;
+    margin-bottom: 30px;
+}
+.footer > .footer-left {
+    width: 33%;
+}
+.footer > .footer-center {
+    width: 33%;
+}
+.footer > .footer-right {
+    width: 33%;
+}
+/*content Footer*/
 .distance-70 {
     margin-top: 70px;
 }
 .distance-140 {
     margin-top: 140px;
+}
+.row {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 /* margin body content*/
 
