@@ -28,3 +28,29 @@ reveal = function() {
   }
 }
 
+$(document).ready(function(){
+
+  $('#id-menu-mobile-open').click(function(){
+    $('#id-menu-body').removeClass('hide');
+  });
+
+  $('#id-menu-mobile-close').click(function(){
+    $('#id-menu-body').addClass('hide');
+  });
+
+  //scrol for buttion up
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      $('#btn-up').removeClass('hide');
+  } else {
+      $('#btn-up').addClass('hide');
+  }
+
+  $('#btn-up').click(function(){
+    topFunction();
+  })
+});
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
