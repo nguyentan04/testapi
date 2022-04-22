@@ -32,18 +32,27 @@ body {
     background-color: #010438;
 }
 
+/*home socal*/
+.home-socal {
+    display: inline-block;
+    width: 5%;
+    position: relative;
+    top: -261px;
+    left: -45px;
+}
+
 /* headr menu */
 .header.menu > .logo{
     position: relative;
     display: inline-block;
-    right: -15%;
+    right: 0%;
     top: 34px;
 }
 
 .header.menu > .menu-app{
     position: relative;
     display: inline-block;
-    left: 75%;
+    left: 87%;
     top: -55px;
     transition: all 2s ease-in-out;
 }
@@ -53,7 +62,7 @@ body {
 }
 
 .header.menu > .menu-center {
-    max-width: 700px;
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
 }
