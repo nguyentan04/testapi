@@ -64,7 +64,6 @@ body {
 .header > .menu-body {    
     position: absolute;
     top: 0px;
-    height: 100vh;
     width: 100vw;
     background-color: #010438;
     overflow: hidden;
@@ -181,13 +180,14 @@ h4.des {
 }
 .box > .detail {
     padding: 5px 10px;
-    margin: 0px 40px;
+    margin: auto;
     font-weight: 600;
     font-size: 18px;
     background: rgba(255, 255, 255, 0.1);
-    box-shadow: inset 2px -2px 2px rgba(255, 255, 255, 0.1), inset -2px 2px 2px rgba(255, 255, 255, 0.2);
+    box-shadow: inset 2px -2px 2px rgb(255 255 255 / 10%), inset -2px 2px 2px rgb(255 255 255 / 20%);
     backdrop-filter: blur(64px);
     border-radius: 96px;
+    max-width: 200px;
 }
 
 .partners > .part {
@@ -221,4 +221,9 @@ h4.des {
     opacity: 0;
     transition: 1s all ease;
 }
+.top {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+  }
 /*effect */
