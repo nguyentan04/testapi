@@ -27,6 +27,12 @@ reveal = function() {
 }
 
 $(document).ready(function(){
+  $.ajax({url: "https://api.critterland.world/tot/info", success: function(result){
+    $('#id_tot_distance').html(result.totDistance*1000);
+    $('#id_tot_user').html(result.totRuns);
+    $('#id_tot_kr').html(result.totKr);
+  }});
+
 
   $('#id-menu-mobile-open').click(function(){
     $('#id-menu-body').removeClass('hide');
